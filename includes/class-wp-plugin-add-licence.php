@@ -203,7 +203,7 @@ class WP_Plugin_Licencing_Add_Licence {
 				// Get contents
 				$message = ob_get_clean();
 
-				wp_mail( $activation_email, __( 'Your licence keys for "WP Job Manager"', 'wp-plugin-licencing' ), $message );
+				wp_mail( $activation_email, __( 'Your licence keys for "WooCommerce DIBS Account"', 'wp-plugin-licencing' ), $message );
 				
 				$admin_message = sprintf( __( 'Licence has been emailed to %s.', 'wp-plugin-licencing' ), $activation_email );
 				echo sprintf( '<div class="updated"><p>%s</p></div>', $admin_message );

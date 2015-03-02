@@ -98,7 +98,7 @@ class WP_Plugin_Licencing_Shortcodes {
 				// Get contents
 				$message = ob_get_clean();
 
-				if ( wp_mail( $activation_email, __( 'Your licence keys for WP Job Manager', 'wp-plugin-licencing' ), $message ) ) {
+				if ( wp_mail( $activation_email, __( 'Your licence keys for WooCommerce DIBS Account', 'wp-plugin-licencing' ), $message ) ) {
 					wc_add_notice( sprintf( __( 'Your licences have been emailed to %s.' ), $activation_email ), 'success' );
 				} else {
 					wc_add_notice( __( 'Your licences could not be sent. Please contact us for support.' ), 'error' );
